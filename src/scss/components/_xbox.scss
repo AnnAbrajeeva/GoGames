@@ -1,0 +1,16 @@
+.xbox {
+  padding-top: 40px;
+  padding-bottom: 90px;
+  background: url('../img/xbox-bg.png') center center/cover no-repeat;
+
+  &__right-block {
+    position: relative;
+  }
+
+  &__dots {
+    position: absolute;
+    right: -50px;
+    top: 60%;
+    z-index: -1;
+  }
+}
