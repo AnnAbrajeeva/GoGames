@@ -1,0 +1,22 @@
+.about {
+  padding-top: 90px;
+  padding-bottom: 92px;
+  position: relative;
+
+  &__container {
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    right: -90px;
+    top: -50%;
+  }
+
+  &__vr {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+  }
+}

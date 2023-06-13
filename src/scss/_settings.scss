@@ -14,7 +14,7 @@ html {
   font-weight: 500;
   font-size: 18px;
   -webkit-text-size-adjust: 100%;
-  background-color: #FFE6D7;
+  background-color: #ffe6d7;
 }
 
 .page__body {
@@ -116,4 +116,44 @@ a {
   line-height: 24px;
   text-align: center;
   color: #ffffff;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 35px;
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 26px;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 24px;
+    color: var(--blue-color);
+  }
+
+  &__title {
+    margin: 0;
+    font-family: 'QanelasSoft';
+    margin-bottom: 31px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 75px;
+    color: var(--pink-color);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 36px;
+    line-height: 29px;
+    color: #826f8c;
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  &__btn {
+    padding: 14px 36px;
+    font-size: 18px;
+  }
 }
