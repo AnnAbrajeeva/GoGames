@@ -1,0 +1,17 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "JosefinSans", sans-serif;
+  --content-width: 1167px;
+  --container-offset: 50px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --blue-color: #355070;
+  --purple-color: #6D597a;
+  --lightPurple-color: #856576;
+  --orange-color: #e5686f;
+  --beige-color: #eaac8b;
+}
