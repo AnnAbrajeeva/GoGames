@@ -1,8 +1,8 @@
 /* stylelint-disable */
 
 @mixin burger {
-  --burger-width: 30px;
-  --burger-height: 30px;
+  --burger-width: 40px;
+  --burger-height: 20px;
   --burger-line-height: 2px;
 
   position: relative;
@@ -10,9 +10,15 @@
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
+  color: #826f8c;
   background-color: transparent;
   cursor: pointer;
+  z-index: 30;
+  display: none;
+
+  @include tablet {
+    display: block;
+  }
 
   &::before,
   &::after {

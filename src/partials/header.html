@@ -5,23 +5,28 @@
         <img src="img/logo.png" alt="logo" />
       </a>
 
-      <nav class="header__nav">
+      <nav class="header__nav" data-menu>
         <ul class="header__nav-list list-reset">
-          <a href="#" class="header__nav-link">
+          <a href="#" class="header__nav-link" data-menu-item>
             <li class="header__nav-item">Home</li>
           </a>
-          <a href="" class="header__nav-link"
-            ><li class="header__nav-item">About Us</li></a
-          >
-          <a href="" class="header__nav-link"
-            ><li class="header__nav-item">Prices</li></a
-          >
-          <a href="" class="header__nav-link">
-            <li class="header__nav-item">Rules</li></a
-          >
+          <a href="" class="header__nav-link" data-menu-item>
+            <li class="header__nav-item">About Us</li>
+          </a>
+          <a href="" class="header__nav-link" data-menu-item>
+            <li class="header__nav-item">Prices</li>
+          </a>
+          <a href="" class="header__nav-link" data-menu-item>
+            <li class="header__nav-item">Rules</li>
+          </a>
         </ul>
         <button class="btn btn-reset header__nav-btn">Get Started Now</button>
       </nav>
+
+      <button class="burger" data-burger>
+        <span class="burger__line"></span>
+      </button>
     </div>
   </div>
 </header>
+<div class="overlay" data-menu-overlay></div>

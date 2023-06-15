@@ -20,6 +20,10 @@
     line-height: 75px;
     color: #eb8382;
     margin-bottom: 70px;
+
+    @include tablet {
+      font-size: 40px;
+    }
   }
 
   &__wrapper {
@@ -43,6 +47,8 @@
     font-size: 32px;
     line-height: 32px;
     color: var(--blue-color);
+
+
   }
 
   &__price {

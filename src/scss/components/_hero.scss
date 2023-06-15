@@ -18,6 +18,10 @@
     top: -6px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__title {
@@ -34,6 +38,10 @@
     height: 100%;
 
     @include flex-all-center;
+
+    @include tablet {
+      height: auto;
+    }
   }
 
   &__img-circle {
@@ -45,6 +53,7 @@
   &__img {
     position: relative;
     width: 100%;
+    bottom: 0;
   }
 
   &__boy {
@@ -58,18 +67,30 @@
     position: absolute;
     top: 52px;
     right: 26px;
+
+    @include tablet {
+      right: 0;
+    }
   }
 
   &__box-top {
     position: absolute;
     top: -10px;
     left: -6vw;
+
+    @include tablet {
+      width: 170px;
+    }
   }
 
   &__box-bottom {
     position: absolute;
     bottom: -29px;
     right: -13vh;
+
+    @include tablet {
+      width: 170px;
+    }
   }
 
   &__img-x {
@@ -77,6 +98,12 @@
     bottom: -14vh;
     left: 52%;
     transform: translateX(-50%);
+
+    @include tablet {
+      right: 0;
+      left: auto;
+      transform: none;
+    }
   }
 
   &__img-dots {
@@ -84,5 +111,9 @@
     right: -97px;
     top: 48%;
     transform: translateY(-50%);
+
+    @include tablet {
+      display: none;
+    }
   }
 }
