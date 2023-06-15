@@ -30,6 +30,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 41px;
+
+    @media (max-width: 931px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 41px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -40,6 +49,10 @@
   box-shadow: 0px 20px 50px rgba(132, 148, 205, 0.08);
   border-radius: 20px;
 
+  @include tablet {
+    padding: 20px 30px;
+  }
+
   &__title {
     margin: 0;
     margin-bottom: 33px;
@@ -48,7 +61,9 @@
     line-height: 32px;
     color: var(--blue-color);
 
-
+    @include tablet {
+      font-size: 20px;
+    }
   }
 
   &__price {
@@ -59,9 +74,20 @@
     line-height: 27px;
     color: #eb8382;
 
+    @include tablet {
+      font-size: 20px;
+      line-height: normal;
+      margin-bottom: 15px;
+    }
+
     &--big {
       font-size: 50px;
       line-height: 50px;
+
+      @include tablet {
+        font-size: 30px;
+        line-height: normal;
+      }
     }
 
     &--small {
@@ -72,11 +98,19 @@
 
   &__list {
     margin-bottom: 53px;
+
+    @include tablet {
+      margin-bottom: 15px;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-bottom: 23px;
+
+      @include tablet {
+        margin-bottom: 15px;
+      }
     }
 
     padding-left: 35px;

@@ -11,6 +11,10 @@
 
   &__left-block {
     position: relative;
+
+    @include small-tablet {
+      order: 2;
+    }
   }
 
   &__img-arrows {
@@ -41,6 +45,12 @@
 
     @include tablet {
       height: auto;
+    }
+
+    @include small-tablet {
+      order: 1;
+      width: 70%;
+      margin: 0 auto;
     }
   }
 

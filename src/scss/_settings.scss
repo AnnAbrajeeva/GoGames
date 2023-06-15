@@ -182,6 +182,10 @@ a {
   align-items: center;
   gap: 35px;
 
+  @include small-tablet {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   &__subtitle {
     margin: 0;
     margin-bottom: 26px;

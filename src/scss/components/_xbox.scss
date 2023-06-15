@@ -5,6 +5,19 @@
 
   &__right-block {
     position: relative;
+
+    @include small-tablet {
+      order: 1;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  &__left-block {
+
+    @include small-tablet {
+      order: 2;
+    }
   }
 
   &__dots {

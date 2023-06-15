@@ -20,4 +20,21 @@
     left: 50vw;
     z-index: -1;
   }
+
+  &__left-block {
+
+    @include small-tablet {
+      order: 1;
+      width: 70%;
+      margin: 0 auto;
+      order: 1;
+    }
+  }
+
+  &__right-block {
+
+    @include small-tablet {
+      order: 2;
+    }
+  }
 }
