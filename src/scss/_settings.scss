@@ -110,12 +110,56 @@ a {
 }
 
 .btn {
+  position: relative;
   padding: 14px 19px;
   background: linear-gradient(94.66deg, #4499d9 17.46%, #7367be 87.77%);
   border-radius: 25px;
   line-height: 24px;
   text-align: center;
   color: #ffffff;
+  transition: all 0.5s ease;
+  z-index: 5;
+
+  &::before {
+    opacity: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: linear-gradient(94.66deg, #4499d9 17.46%, #7367be 87.77%);
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: linear-gradient(0deg, #4499d9 100%, #7367be 0%);
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
 
 .content {
@@ -135,7 +179,7 @@ a {
 
   &__title {
     margin: 0;
-    font-family: 'QanelasSoft';
+    font-family: "QanelasSoft";
     margin-bottom: 31px;
     font-weight: 700;
     font-size: 64px;
