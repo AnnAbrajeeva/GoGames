@@ -99,6 +99,10 @@ a {
   margin: 0 auto;
   padding: 0 var(--container-offset);
   max-width: var(--container-width);
+
+  @include small-tablet {
+    padding: 0 15px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -193,6 +197,10 @@ a {
     font-size: 23px;
     line-height: 24px;
     color: var(--blue-color);
+
+    @include small-tablet {
+      margin-bottom: 10px;
+    }
   }
 
   &__title {
@@ -208,6 +216,11 @@ a {
       font-size: 40px;
       line-height: 40px;
     }
+
+    @include small-tablet {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
   }
 
   &__descr {
@@ -217,11 +230,20 @@ a {
     color: #826f8c;
     font-weight: 500;
     font-size: 18px;
+
+    @include small-tablet {
+      margin-bottom: 10px;
+    }
   }
 
   &__btn {
     padding: 14px 36px;
     font-size: 18px;
+
+    @include small-tablet {
+      margin: 0 auto;
+      display: block;
+    }
   }
 }
 

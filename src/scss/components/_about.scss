@@ -3,6 +3,11 @@
   padding-bottom: 92px;
   position: relative;
 
+  @include small-tablet {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
   &__container {
     position: relative;
   }

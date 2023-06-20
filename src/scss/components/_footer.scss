@@ -7,11 +7,19 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include small-tablet {
+      justify-content: center;
+    }
   }
 
   &__logo {
     width: 238px;
     cursor: pointer;
+
+    @include small-tablet {
+      width: 150px;
+    }
   }
 
   &__copy {
@@ -19,6 +27,11 @@
     font-size: 16px;
     line-height: 28px;
     color: #826f8c;
+
+    @include small-tablet {
+      font-size: 14px;
+      text-align: center;
+    }
   }
 
   &__social {

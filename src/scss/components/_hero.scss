@@ -5,6 +5,11 @@
   height: 100%;
   background: url("../img/hero-bg.png") center center/cover no-repeat;
 
+  @include small-tablet {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
   &__wrapper {
     position: relative;
   }
@@ -71,6 +76,10 @@
     width: 100%;
     bottom: 0;
     left: -40px;
+
+    @include small-tablet {
+      left: -20px;
+    }
   }
 
   &__head-boy {
@@ -91,6 +100,10 @@
     @include tablet {
       width: 170px;
     }
+
+    @include small-tablet {
+      left: -18vw;
+    }
   }
 
   &__box-bottom {
@@ -108,11 +121,16 @@
     bottom: -14vh;
     left: 52%;
     transform: translateX(-50%);
+    animation: 5s linear infinite rotate;
 
     @include tablet {
       right: 0;
       left: auto;
       transform: none;
+    }
+
+    @include small-tablet {
+      display: none;
     }
   }
 
@@ -125,5 +143,16 @@
     @include tablet {
       display: none;
     }
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) rotate(0);
+  }
+
+  100% {
+    transform: translateX(-50%) rotate(360deg);
   }
 }

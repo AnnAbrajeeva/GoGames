@@ -3,6 +3,11 @@
   padding-bottom: 90px;
   background: url('../img/xbox-bg.png') center center/cover no-repeat;
 
+  @include small-tablet {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+
   &__right-block {
     position: relative;
 

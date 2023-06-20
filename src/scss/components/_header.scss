@@ -19,6 +19,10 @@
     @include tablet {
       width: 200px;
     }
+
+    @include small-tablet {
+      width: 150px;
+    }
   }
 
   &__nav {
@@ -39,6 +43,10 @@
       border-radius: 100%;
       transform: translate(100%);
       transition: all 0.3s ease;
+    }
+
+    @include small-tablet {
+      width: 100%;
     }
 
     &--active {
