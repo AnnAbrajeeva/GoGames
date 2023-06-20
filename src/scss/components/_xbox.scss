@@ -18,6 +18,35 @@
     }
   }
 
+  &__anim-block {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__big-wheel {
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    animation: rotateCircle 8s linear infinite;
+  }
+
+  &__small-wheel {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    animation: rotateCircle 8s linear infinite;
+  }
+
+  &__control-img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+  }
+
   &__left-block {
 
     @include small-tablet {

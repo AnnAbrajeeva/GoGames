@@ -84,11 +84,9 @@ function animation() {
   gsap.to('.hero__left-block', {
     scrollTrigger: {
       trigger: '.hero',
-      markers: true,
       start: 'top top',
       scrub: true,
     },
-    yPercent: 50,
     scale: 0.5,
     xPercent: -80,
   })
@@ -99,9 +97,76 @@ function animation() {
       start: 'top top',
       scrub: true,
     },
-    yPercent: 50,
     scale: 0.5,
     xPercent: 80,
+  })
+
+  gsap.from('.about__left-block', {
+    xPercent: -40,
+    scrollTrigger: {
+      trigger: '.about',
+      scrub: true
+    }
+  })
+
+  gsap.from('.about__right-block', {
+    xPercent: 40,
+    scrollTrigger: {
+      trigger: '.about',
+      scrub: true
+    }
+  })
+
+  gsap.from('.xbox__left-block', {
+    xPercent: -40,
+    scrollTrigger: {
+      trigger: '.xbox',
+      scrub: true
+    }
+  })
+
+  gsap.from('.xbox__right-block', {
+    xPercent: 40,
+    scrollTrigger: {
+      trigger: '.xbox',
+      scrub: true
+    }
+  })
+
+  gsap.from('.plan__subtitle', {
+    scrollTrigger: {
+      trigger: '.plan',
+      start: '-100% center',
+      scrub: true
+    },
+    y: 100,
+    scale: 0,
+    opacity: 0,
+    transformOrigin: 'top center'
+  })
+
+  gsap.from('.plan__title', {
+    scrollTrigger: {
+      trigger: '.plan',
+      start: '-100% center',
+      scrub: true
+    },
+    y: 100,
+    scale: 0,
+    opacity: 0,
+    transformOrigin: 'top center'
+  })
+
+  gsap.from('.plan__card', {
+    scrollTrigger: {
+      trigger: '.plan',
+      start: 'top center',
+      end: '+=500px',
+      scrub: true
+    },
+    scale: 0,
+    transformOrigin: 'top center',
+    stagger: 0.5
   })
 }
 

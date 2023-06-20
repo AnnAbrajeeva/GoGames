@@ -18,6 +18,17 @@
     top: -30%;
   }
 
+  &__left-block {
+    position: relative;
+  }
+
+  &__img-tv {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: upAndDown 3s ease infinite;
+  }
+
   &__vr {
     display: block;
     position: absolute;
@@ -43,3 +54,5 @@
     }
   }
 }
+
+

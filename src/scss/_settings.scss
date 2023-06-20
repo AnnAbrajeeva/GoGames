@@ -251,3 +251,36 @@ a {
   align-self: center;
   @include burger;
 }
+
+@keyframes rotate {
+  0% {
+    transform: translateX(-50%) rotate(0);
+  }
+
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+@keyframes rotateCircle {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
