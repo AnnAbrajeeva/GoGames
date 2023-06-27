@@ -29,17 +29,23 @@ plan.add("(min-width: 1440px)", () => {
     transformOrigin: "top center",
   });
 
-  gsap.from(".plan__card", {
+  gsap.set('.card', {
+    opacity: 0,
+    yPercent: -30
+  })
+
+  gsap.to(".card", {
     scrollTrigger: {
       trigger: ".plan",
-      start: "-500 top",
-      end: "+=500px",
-      scrub: true,
+      start: "-100% center",
+      end: "top",
+      scrub: 0.5,
     },
-    opacity: 0,
-    yPercent: -50,
+    stagger: 0.5,
+    duration: 0.3,
+    opacity: 1,
+    yPercent: 0,
     transformOrigin: "top center",
-    stagger: 0.8,
   });
 
   return () => {};

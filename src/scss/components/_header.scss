@@ -2,6 +2,7 @@
   position: absolute;
   width: 100%;
   top: 10px;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -68,10 +69,13 @@
     }
   }
 
-  &__nav-link {
-    position: relative;
+  &__nav-item {
     line-height: 24px;
     color: var(--blue-color);
+  }
+
+  &__nav-link {
+    position: relative;
 
     &::before {
       content: "";
