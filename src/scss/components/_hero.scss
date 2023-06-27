@@ -50,12 +50,21 @@
 
     @include tablet {
       height: auto;
+      display: none;
     }
 
     @include small-tablet {
       order: 1;
       width: 70%;
       margin: 0 auto;
+    }
+  }
+
+  &__right-block-mob {
+    display: none;
+
+    @include tablet {
+      display: block;
     }
   }
 

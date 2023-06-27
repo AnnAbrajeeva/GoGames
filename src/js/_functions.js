@@ -21,9 +21,18 @@
 // import './functions/fix-fullheight';
 
 // Реализация бургер-меню
-import { burger } from './functions/burger';
-import animation from './functions/animation';
-animation();
+import { burger } from "./functions/burger";
+
+//Анимация
+import * as heroAnimation from "./functions/heroAnim";
+import * as aboutAnimation from "./functions/aboutAnim";
+import * as xboxAnimation from "./functions/xboxAnim";
+import * as planAnimation from "./functions/planAnim";
+
+//Выбор плана
+
+import * as plan from "./functions/choosePlan";
+
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';
@@ -86,4 +95,3 @@ animation();
 // };
 
 // validateForms('.form-1', rules1, afterForm);
-

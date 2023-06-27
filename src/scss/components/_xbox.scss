@@ -1,7 +1,7 @@
 .xbox {
   padding-top: 40px;
   padding-bottom: 90px;
-  background: url('../img/xbox-bg.png') center center/cover no-repeat;
+  background: url("../img/xbox-bg.png") center center/cover no-repeat;
 
   @include small-tablet {
     padding-top: 50px;
@@ -10,6 +10,18 @@
 
   &__right-block {
     position: relative;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__right-block-mob {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
 
     @include small-tablet {
       order: 1;
@@ -30,7 +42,7 @@
     position: absolute;
     top: 20px;
     right: 20%;
-    animation: rotateCircle 8s linear infinite;
+    animation: rotateCircle 8s linear infinite reverse;
   }
 
   &__small-wheel {
@@ -48,7 +60,6 @@
   }
 
   &__left-block {
-
     @include small-tablet {
       order: 2;
     }
