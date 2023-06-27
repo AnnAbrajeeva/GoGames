@@ -48,5 +48,10 @@ plan.add("(min-width: 1440px)", () => {
     transformOrigin: "top center",
   });
 
-  return () => {};
+  return () => {
+    gsap.set('.card', {
+      opacity: 1,
+      yPercent: 0
+    })
+  };
 });
