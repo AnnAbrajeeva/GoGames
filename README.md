@@ -1,6 +1,6 @@
 # GoGames
 
-Адаптивная Pixel Perfect верстка сайта по макету из Figma
+Адаптивная Pixel Perfect верстка сайта по макету из Figma с применением GSAP анимаций
 
 [Link to the deploy](https://gogames-healas.netlify.app/)
 
