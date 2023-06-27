@@ -32,13 +32,14 @@ plan.add("(min-width: 1440px)", () => {
   gsap.from(".plan__card", {
     scrollTrigger: {
       trigger: ".plan",
-      start: "top center",
+      start: "-500 top",
       end: "+=500px",
       scrub: true,
     },
-    scale: 0,
+    opacity: 0,
+    yPercent: -50,
     transformOrigin: "top center",
-    stagger: 0.5,
+    stagger: 0.8,
   });
 
   return () => {};
